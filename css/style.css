@@ -1,0 +1,98 @@
+/*FONT*/
+@font-face {
+	font-family: "Manrope";
+	src: url("fonts/Manrope-Thin.ttf") format("truetype");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("fonts/Manrope-Light.ttf") format("truetype");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("fonts/Manrope-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("fonts/Manrope-Medium.ttf") format("truetype");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("fonts/Manrope-Semibold.ttf") format("truetype");
+	font-weight: 600;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("fonts/Manrope-Bold.ttf") format("truetype");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("fonts/Manrope-ExtraBold.ttf") format("truetype");
+	font-weight: 800;
+}
+
+:root {
+	--portfolio-black: #3b3b3b;
+	--portfolio-background-white: #fffdf7;
+	--portfolio-pink: #dd9f92;
+	--portfolio-white: #f3f3f3;
+	--portfolio-background-dark: #2e2d2e;
+	--portfolio-dark-pink: #e26139;
+	--portfolio-dark-elevation: #ede0d8;
+	--portfolio-footer: rgba(46, 45, 46, 0.52);
+	--portfolio-azure: #e7f1f1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--portfolio-background-white);
+}
+
+body {
+	font-family: "Manrope";
+	line-height: 1.6;
+}
+
+/*NAVBAR*/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Manrope";
+	padding: 15px 30px;
+	background-color: white;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	font-size: 18px;
+	color: #666;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.nav-links {
+	font-family: "Manrope";
+	display: flex;
+	list-style: none;
+	gap: 30px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+	transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+	color: #000;
+	border-bottom: 1px solid #000;
+}
