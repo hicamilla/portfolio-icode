@@ -20,6 +20,11 @@
   <!--Navigation Bar-->
   <nav class="navbar">
     <div class="logo">PORTFOLIO</div>
+    <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+        </div>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
@@ -27,11 +32,89 @@
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
-  
+  <!--HERO SECTION-->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>
+          <div class="creative">CREATIVE</div>
+          <div class="designer">FRONT-END DEVELOPER</div>
+        </h1>
+        <p>
+        Hi! I'm Camilla Cardoso, a passionate front-end developer with a background in communication and design.
+        I specialize in creating intuitive, accessible, and responsive web experiences using HTML, CSS, and JavaScript.
+        Currently based in Düsseldorf, I'm constantly learning and building new things.
+      </p>
+      <div class="location">
+        <span><i class="fa-solid fa-location-dot me-2" aria-hidden="true"></i></span>
+        <span>Düsseldorf, Germany</span>
+      </div>
+    </div>
+      <div class="hero-image">
+        <img src="/css/images/photo-perfil.jpeg" alt="Camilla Cardoso, front-end developer portrait">
+      <div class="hello-card">
+        <div>Hi!</div>
+        <div>I'm Camilla</div>
+      </div>
+      <div class="intro-card">
+        <div>A CREATIVE,</div>
+        <div>DETAIL-OBSESSED,</div>
+        <div>HIGHLY CAFFEINATED CODER</div>
+      </div>
+    </div>
+  </div>
+</section>
 
  <script src="/js/script.js"></script>
 </body>
 </html>
 
+<!--PROJECTS SECTION-->
+<section class="projects">
+  <div class="project-content">
+    <h2>PROJECT HIGHLIGHTS</h2>
+    <div class="project-grid">
+    <!--Project 1-->
+    <div class="project-card project-1">
+      <div class="dot"></div>
+      <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop" alt="project info">
+      <div class="category">WEB DEVELOPMENT</div>
+      <h3>WEATHER APP</h3>
+      <h4>Built with HTML, CSS, JavaScript & API</h4>
+    </div>
 
-  
+    <!--Project 2-->
+    <div class="project-card project-2">
+      <div class="dot"></div>
+      <div
+        style="background: white; border-radius:8px; padding: 20px; margin: 30px 0 15px 0; height: 200px; display: flex; align-items: center; justify-content: center;">
+        <div style="text-align:center;">
+          <div style="font-size:24px; margin-bottom: 10px; color:#4285f4">BE</div>
+          <div style="font-size:24px; margin-bottom: 10px; color:#4285f4">YOURSELF</div>
+          <div style="font-size: 24px; color:#4285f4;">BABE</div>
+        </div>
+      </div>
+      <div class="category">PERSONAL PROJECT</div>
+      <h3>PORTFOLIO WEBSITE</h3>
+      <h4>Built with HTML, CSS, and JavaScript</h4>
+    </div>
+    </div>
+    <button class="view-work-btn" onclick="window.location.href='work.html'">View All Work</button>
+  </div>
+</section>
+
+<!--FOTTER-->
+<footer class="footer bg-white border-top py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <p class="mb-0 text-muted small">© 2024 Camilla Cardoso. All rights reserved.</p>
+    <p class="mb-0 small">
+      <a href="mailto:hicamillacardoso@gmail.com" class="text-muted text-decoration-none">
+        hicamillacardoso@gmail.com
+      </a>
+    </p>
+  </div>
+</footer>
+
+</body>
+<script src="/js/script.js"></script>
+</html>
