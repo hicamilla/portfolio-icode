@@ -1,0 +1,75 @@
+/*responsive.css*/
+@media (max-width: 768px) {
+	.hero-content {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.hero-text h1 {
+		font-size: 36px;
+	}
+
+	.hero-image {
+		margin-top: 30px;
+	}
+
+	.project-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.navbar {
+		flex-wrap: wrap !important;
+	}
+
+	.navbar .container-fluid {
+		flex-wrap: wrap !important;
+		align-items: flex-start;
+	}
+
+	.navbar-collapse {
+		flex-direction: column;
+		align-items: flex-start;
+		padding-top: 1rem;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		gap: 15px;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	.view-work-btn {
+		width: 100%;
+		max-width: 300px;
+	}
+}
+/*contact page*/
+.response-time-info {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.response-card {
+	background-color: #f3f3f3;
+	border: 1px solid rgba(59, 59, 59, 0.15);
+	border-radius: 12px;
+	padding: 30px;
+	box-shadow: 0 2px 8px rgba(59, 59, 59, 0.08);
+	text-align: center;
+}
+
+.response-card h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #999999;
+	margin-bottom: 15px;
+}
+
+.response-card p {
+	font-size: 18px;
+	color: #3b3b3b;
+	font-weight: 500;
+}

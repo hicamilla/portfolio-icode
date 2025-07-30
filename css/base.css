@@ -1,0 +1,60 @@
+/* base.css */
+@font-face {
+	font-family: "Manrope";
+	src: url("/css/font/Manrope-Thin.ttf") format("truetype");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("/css/font/Manrope-Light.ttf") format("truetype");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("/css/font/Manrope-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("/css/font/Manrope-Medium.ttf") format("truetype");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("/css/font/Manrope-Semibold.ttf") format("truetype");
+	font-weight: 600;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("/css/font/Manrope-Bold.ttf") format("truetype");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url("/css/font/Manrope-ExtraBold.ttf") format("truetype");
+	font-weight: 800;
+}
+
+:root {
+	--portfolio-black: #3b3b3b;
+	--portfolio-background-white: #fffdf7;
+	--portfolio-pink: #dd9f92;
+	--portfolio-white: #f3f3f3;
+	--portfolio-background-dark: #2e2d2e;
+	--portfolio-dark-pink: #e26139;
+	--portfolio-dark-elevation: #ede0d8;
+	--portfolio-footer: rgba(46, 45, 46, 0.52);
+	--color-muted-foreground: #666666;
+	--color-border: rgba(59, 59, 59, 0.15);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Manrope";
+	line-height: 1.6;
+}
