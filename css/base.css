@@ -1,51 +1,30 @@
 /* base.css */
-@font-face {
-	font-family: "Manrope";
-	src: url("/css/font/Manrope-Thin.ttf") format("truetype");
-	font-weight: 100;
-}
-@font-face {
-	font-family: "Manrope";
-	src: url("/css/font/Manrope-Light.ttf") format("truetype");
-	font-weight: 300;
-}
-@font-face {
-	font-family: "Manrope";
-	src: url("/css/font/Manrope-Regular.ttf") format("truetype");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "Manrope";
-	src: url("/css/font/Manrope-Medium.ttf") format("truetype");
-	font-weight: 500;
-}
-@font-face {
-	font-family: "Manrope";
-	src: url("/css/font/Manrope-Semibold.ttf") format("truetype");
-	font-weight: 600;
-}
-@font-face {
-	font-family: "Manrope";
-	src: url("/css/font/Manrope-Bold.ttf") format("truetype");
-	font-weight: 700;
-}
-@font-face {
-	font-family: "Manrope";
-	src: url("/css/font/Manrope-ExtraBold.ttf") format("truetype");
-	font-weight: 800;
-}
+@import url("https://api.fontshare.com/css?f[]=supreme@400,700&f[]=recia@400,500&display=swap");
 
 :root {
-	--portfolio-black: #3b3b3b;
-	--portfolio-background-white: #fffdf7;
-	--portfolio-pink: #dd9f92;
-	--portfolio-white: #f3f3f3;
-	--portfolio-background-dark: #2e2d2e;
-	--portfolio-dark-pink: #e26139;
-	--portfolio-dark-elevation: #ede0d8;
-	--portfolio-footer: rgba(46, 45, 46, 0.52);
-	--color-muted-foreground: #666666;
-	--color-border: rgba(59, 59, 59, 0.15);
+	--font-heading: "Supreme", sans-serif;
+	--font-body: "Recia", serif;
+	--portfolio-charcoal: #463f3a;
+	--portfolio-taupe: #8a817c;
+	--portfolio-beige: #bcb8b1;
+	--portfolio-cream: #f4f3ee;
+	--portfolio-dusty-pink: #e0afa0;
+	--portfolio-taupe-light: #9a9088;
+	--portfolio-beige-light: #ccc8c1;
+	--portfolio-dusty-pink-light: #e8bbb0;
+	--portfolio-dusty-pink-dark: #d19c8a;
+	--portfolio-black: #000000;
+	--portfolio-white: #ffffff;
+	--portfolio-gray-50: #fafafa;
+	--portfolio-gray-100: #f4f4f5;
+	--portfolio-gray-200: #e4e4e7;
+	--portfolio-gray-300: #d4d4d8;
+	--portfolio-gray-400: #a1a1aa;
+	--portfolio-gray-500: #71717a;
+	--portfolio-gray-600: #52525b;
+	--portfolio-gray-700: #3f3f46;
+	--portfolio-gray-800: #27272a;
+	--portfolio-gray-900: #18181b;
 }
 
 * {
@@ -55,6 +34,5 @@
 }
 
 body {
-	font-family: "Manrope";
-	line-height: 1.6;
+	line-height: 1.5;
 }

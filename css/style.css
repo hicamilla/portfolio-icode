@@ -552,82 +552,44 @@
 /* =============================
    4. Contact Section
 ============================= */
-/*Main container for all content*/
+
 .contact-page-container {
+	background-color: var(--portfolio-cream);
+}
+
+.first-contact-container {
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 80px 30px;
-}
-
-/*Main contact section with animation*/
-.contact-main-container {
+	padding: 60px 30px;
 	text-align: center;
-	animation: slideInFromBottom 0.8s ease-out;
-}
-/* =============================
-   5. SM Links Section
-============================= */
-
-/* Social Links Container */
-.social-links-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	margin-top: 1rem;
 }
 
-/* Individual Social Link Icon */
-.social-media-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 2.5rem;
-	height: 2.5rem;
-	background-color: var(--portfolio-background-dark);
-	color: var(--portolio-white);
-	border-radius: 0.5rem;
-	text-decoration: none;
-	transition: all 0.3s ease;
-}
-
-.social-media-link:hover {
-	background-color: #dd9f92;
-	color: #fffdf7;
-	transform: translateY(-2px);
-}
-/*Large page title styling*/
 .contact-page-title {
-	font-size: 3rem;
-	font-weight: 700;
-	margin-bottom: 2rem;
-	letter-spacing: 0.2rem;
+	font-family: var(--font-heading);
+	font-size: 60px;
+	font-weight: 800;
 	color: var(--portfolio-black);
-}
-/*Introduction paragraph styling*/
-.contact-intro-text {
-	font-size: 1.125rem;
-	color: var(--var-muted-foreground);
-	line-height: 1.75;
 	margin: 0;
-	padding: 30px 0 50px 0;
 }
 
-/*Container that holds all contact cards*/
-.contact-email-card {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 1.87rem;
+.contact-intro-text {
+	font-family: var(--font-body);
+	font-size: 17px;
+	line-height: 1.7;
+	margin: 0;
+	padding: 50px 0;
 }
-/* Basic contact card styling */
+
+/* Contact Info Card */
 .contact-info-card {
 	background-color: var(--portfolio-background-white);
 	border: 1px solid var(--color-border);
 	border-radius: 1rem;
-	box-shadow: 0 4px 16px rgba(59, 59, 59, 0.8);
+	box-shadow: 0 4px 16px rgba(59, 59, 59, 0.08);
 	margin: 0.5rem 0;
 }
 
+/* Card Sizing */
 .contact-email-card {
 	padding: 2rem;
 }
@@ -636,9 +598,10 @@
 	padding: 1.5rem;
 }
 
-/*Label above contact info*/
+/* Info Label */
 .contact-info-label {
-	color: var(--var-muted-foreground);
+	font-family: var(--font-heading);
+	color: var(--color-muted-foreground);
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	font-size: 0.73rem;
@@ -646,10 +609,13 @@
 	margin: 0.5rem 0;
 }
 
+/* Info Value */
 .contact-info-value {
+	font-family: var(--font-body);
 	color: var(--portfolio-black);
 	font-weight: 700;
 	font-size: 1.2rem;
+	letter-spacing: 0.6px;
 	text-decoration: none;
 }
 
@@ -657,26 +623,46 @@
 	color: var(--portfolio-pink);
 }
 
+/* Email Text */
 .contact-email-text {
 	font-size: 1.5rem;
 	display: block;
 }
 
+/* Regular Info Text */
 .contact-regular-text {
 	font-size: 1.22rem;
 	font-weight: 700;
 	margin: 0.5rem 0;
 }
-/* Container for two cards side by side */
+
+/* 2-column layout */
 .contact-two-column-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1.5rem;
 	margin-top: 1.87rem;
-	padding-bottom: 3.87rem;
 }
 
-/*Social Media Section*/
+/* =============================
+   5. Social Media Links Section
+============================= */
+
+.social-media-container {
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.social-media-label {
+	color: var(--color-muted-foreground);
+	font-weight: 500;
+	font-size: 0.78rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 1rem 0;
+}
+
+/* Icon Grid */
 .social-links-container {
 	display: flex;
 	justify-content: center;
@@ -685,35 +671,25 @@
 	margin-top: 1rem;
 }
 
-.social-media-label {
-	width: 100%;
-	color: var(--var-muted-foreground);
-	font-weight: 500;
-	font-size: 0.78rem;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.1em;
-	margin: 1rem 0;
-}
-
 .social-media-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 2.5rem;
-	height: 2.5rem;
-	background-color: var(--portfolio-background-dark);
-	color: var(--portolio-white);
+	width: 2.3rem;
+	height: 2.3rem;
+	background-color: var(--portfolio-gray-700);
+	color: var(--portfolio-white);
 	border-radius: 0.5rem;
 	text-decoration: none;
 	transition: all 0.3s ease;
 }
 
 .social-media-link:hover {
-	background-color: #dd9f92;
-	color: #fffdf7;
+	background-color: var(--portfolio-dusty-pink-dark);
+	color: var(--portfolio-white);
 	transform: translateY(-2px);
 }
+
 /* =============================
    6. Animations Section
 ============================= */
